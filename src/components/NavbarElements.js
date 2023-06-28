@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
 background: #ffffff;
 height: 10vh;
-width: 100vw;
+width: 100%;
 display: flex;
 justify-content: center;
 z-index: 12;
@@ -51,7 +51,6 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -24px;
 white-space: nowrap; */
 @media screen and (max-width: 768px) {
 	display: none;
