@@ -32,6 +32,14 @@ cursor: pointer;
 &.active {
 	color: #ffaec8;
 }
+
+@media screen and (max-width: 768px) {
+	display: flex;
+	margin: 0.2rem 0;
+	padding: 0 1rem;
+	font-size: 1.25em;
+	cursor: pointer;
+}
 `;
 
 export const Bars = styled(FaBars)`
@@ -50,9 +58,14 @@ color: #808080;
 
 export const NavMenu = styled.div`
 display: flex;
+margin: auto;
 align-items: center;
-white-space: nowrap; */
+white-space: nowrap;
 @media screen and (max-width: 768px) {
-	display: none;
+	display: flex;
+	top: 0;
+	right: 0;
+	font-size: 1em;
+	cursor: pointer;
 }
 `;

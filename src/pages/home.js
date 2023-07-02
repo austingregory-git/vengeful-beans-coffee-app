@@ -14,8 +14,10 @@ const imageStyle = {
     marginLeft: "auto",
     marginRight: "auto",
     maxWidth: "100vw",
-    width: 788,
-    height: 328,
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
     border: "1px solid black"
 };
 
@@ -25,8 +27,10 @@ const scheduleStyles = {
     marginRight: "auto",
     maxWidth: "100vw",
     padding: "20px 0",
-    width: 788,
-    height: 328,
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
     border: "1px solid black",
     background: "#d69e6e",
     color: "#000000",

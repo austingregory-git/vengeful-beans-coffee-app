@@ -16,10 +16,10 @@ const imageStyle = {
   display: "block",
   marginLeft: "auto",
   marginRight: "auto",
-  maxWidth: "100vw",
-  maxHeight: "20vh",
-  width: 788,
-  height: 164,
+  width: "100%",
+  height: "100%",
+  maxWidth: 788,
+  maxHeight: 328,
 };
 
 const menuBreakStyle = {
