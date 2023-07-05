@@ -3,20 +3,36 @@ export const menuData = {
         displayName: "Coffee Drinks",
         items: [
         {
-            name: "Pottsfield Potion",
-            description: "Pottsfield",
-            price: 6
+            name: "Drip Coffee",
+            description: "The Ol' Classic",
+            price: 2
         },
         {
-            name: "Snow in May",
-            description: "Lavender Latte with CBD",
+            name: "Latte",
+            description: "Espresso with milk and foam",
             price: 5,
         },
         {
-            name: "The Spider Queen",
-            description: "Cinnamon Apple Latte with four shots of Espresso",
+            name: "Americano",
+            description: "Espresso with water",
             price: 5,
-        }]
+        },
+        {
+            name: "Macchiato",
+            description: "Espresso with milk",
+            price: 5,
+        },
+        {
+            name: "Espresso",
+            description: "Espresso with espresso",
+            price: 2,
+        },
+        {
+            name: "Cold Brew",
+            description: "Your good ol' brew, but cold steeped overnight",
+            price: 4,
+        },
+    ]
     },
     specialty_drinks: {
         displayName: "Specialty Drinks",
@@ -61,15 +77,21 @@ export const menuData = {
             price: 4
         },
         {
-            name: "Snow in May",
-            description: "Lavender Latte with CBD",
+            name: "Chamomile",
+            description: "It is time to relax :)",
+            price: 4
+        },
+        {
+            name: "Jasmine",
+            description: "I can show you the world...",
             price: 5,
         },
         {
-            name: "The Spider Queen",
-            description: "Cinnamon Apple Latte with four shots of Espresso",
-            price: 5,
-        }]
+            name: "Arnold Palmer",
+            description: "Lemonade and Iced Tea",
+            price: 4
+        },
+    ]
     },
     food:  {
         displayName: "Food",

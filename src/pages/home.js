@@ -68,7 +68,7 @@ const menuStyles = {
     width: "100%",
     height: "100%",
     maxWidth: 788,
-    maxHeight: "100vh",
+    maxHeight: "100%",
     border: "1px solid black",
     background: "#d69e6e",
     color: "#000000",
