@@ -19,6 +19,9 @@ const aboutVengefulBeansLore = "Years ago, the homeland of our coffee beans were
 const OurStory = () => {
     return (
         <div style={styles.backgroundStyles}>
+            <div style={styles.ourStoryPinkContainerStyles}>
+                <OurStoryText>Our Leader</OurStoryText>
+            </div>
             <div style={styles.ourStoryBrownContainerStyles}>
                 <Grid container spacing={0}>
                         <Grid xs={6}>
@@ -62,6 +65,9 @@ const OurStory = () => {
                 </Grid>
             </div>
             <div style={styles.ourStoryPinkContainerStyles}>
+                <OurStoryText>Our Beans</OurStoryText>
+            </div>
+            <div style={styles.ourStoryBrownContainerStyles}>
                 <Grid container spacing={0}>
                         <Grid xs={6}>
                             <img style={styles.abigailAndFeeImageStyles} src={VengefulBeansCoffeeShopLogo}></img>
