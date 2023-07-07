@@ -15,12 +15,12 @@ export const menuData = {
         {
             name: "Americano",
             description: "Espresso with water",
-            price: 5,
+            price: 3,
         },
         {
             name: "Macchiato",
             description: "Espresso with milk",
-            price: 5,
+            price: 4,
         },
         {
             name: "Espresso",
@@ -84,12 +84,47 @@ export const menuData = {
         {
             name: "Jasmine",
             description: "I can show you the world...",
-            price: 5,
+            price: 4,
         },
         {
             name: "Arnold Palmer",
             description: "Lemonade and Iced Tea",
+            price: 3
+        },
+    ]
+    },
+    alcoholic_drinks: {
+        displayName: "Alcoholic Drinks",
+        items: [
+        {
+            name: "Michelada",
+            description: "Made with clamato juice and spices, the michelada is similar to a Bloody Mary but made with beer.",
+            price: 8
+        },
+        {
+            name: "Carajillo",
+            description: "Freshly brewed coffee with Licor 43, a Spanish liquor with vanilla and citrus flavors.",
+            price: 8
+        },
+        {
+            name: "Modelo",
+            description: "Classic Mexian Pilsner",
+            price: 5,
+        },
+        {
+            name: "Red Wine",
+            description: "A glass of La Crema - Pinot Noir from Sonoma County",
+            price: 6
+        },
+        {
+            name: "Tequila Shot",
+            description: "Owner's choice - Espolon Reposado",
             price: 4
+        },
+        {
+            name: "Mellow Mule",
+            description: "A classic moscow mule infused with THC and CBD",
+            price: 10
         },
     ]
     },
@@ -99,12 +134,12 @@ export const menuData = {
             {
                 name: "Grilled Cheese",
                 description: "It is grilled cheese, you already know what it is",
-                price: 6
+                price: 5
             },
             {
                 name: "Breakfast Burrito",
                 description: "POTATOES AND BACON AND GREEN CHILE AND EGGS AND CHEESE",
-                price: 5,
+                price: 6,
             },
             {
                 name: "Good Soup",
@@ -114,7 +149,7 @@ export const menuData = {
             {
                 name: "Potatoes and Molasses",
                 description: "Keep your stomach from rumbling!",
-                price: 5,
+                price: 4,
             }  
         ]
     }

@@ -29,9 +29,9 @@ cursor: pointer;
     filter: brightness(0.85);
 }
 
-&.active {
-	color: #ffaec8;
-}
+// &.active {
+// 	color: #ffaec8;
+// }
 
 @media screen and (max-width: 768px) {
 	display: flex;

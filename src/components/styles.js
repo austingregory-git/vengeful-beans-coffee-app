@@ -1,7 +1,9 @@
+import styled from "styled-components";
+
 export const backgroundStyles = {
     width: "100%",
     height: "100%",
-    background: '#f4c3ce',
+    background: '#b8f5fa',
 };
 
 export const imageStyle = {
@@ -15,6 +17,71 @@ export const imageStyle = {
     border: "1px solid black"
 };
 
+export const ourStoryBrownContainerStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    border: "1px solid black",
+    background: "#f3bc9c"
+};
+
+export const ourStoryPinkContainerStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    border: "1px solid black",
+    background: "#ffaec8"
+};
+
+export const OurStoryText = styled.div`
+color: #000000;
+font-size: 1.5em;
+font-family: 'Bradley Hand',cursive;
+text-align: center;
+white-space: pre-line;
+padding: 10px;
+max-height: 328;
+@media screen and (max-width: 668px) {
+    font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+    font-size: 0.75em;
+}
+`;
+
+export const OurStoryLore = styled.div`
+color: #000000;
+font-size: 1.25em;
+font-family: 'Bradley Hand',cursive;
+text-align: center;
+white-space: pre-line;
+padding: 10px;
+max-height: 328;
+@media screen and (max-width: 668px) {
+    font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+    font-size: 0.75em;
+}
+`;
+
+export const abigailAndFeeImageStyles = {
+    display: "block",
+    width: "100%",
+    height: "100%",
+    maxHeight: 328,
+    maxWidth: 394,
+    height: "auto",
+};
+
 export const scheduleStyles = {
     display: "block",
     marginLeft: "auto",
@@ -25,7 +92,25 @@ export const scheduleStyles = {
     maxWidth: 788,
     maxHeight: 328,
     border: "1px solid black",
-    background: "#d69e6e",
+    background: "#f3bc9c",
+    color: "#000000",
+    fontSize: "1.5em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+};
+
+export const darkScheduleStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "20px 0",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    border: "1px solid black",
+    background: "#0c4363",
     color: "#000000",
     fontSize: "1.5em",
     fontFamily: "Bradley Hand,cursive",
@@ -61,7 +146,7 @@ export const menuStyles = {
     maxWidth: 788,
     maxHeight: "100%",
     border: "1px solid black",
-    background: "#d69e6e",
+    background: "#f3bc9c",
     color: "#000000",
     fontSize: "1.5em",
     fontFamily: "Bradley Hand,cursive",
@@ -75,7 +160,8 @@ export const menuCategoryStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
-    background: "#ffaec8",
+    //background: "#ffaec8",
+    background: "#f3bc9c",
 };
 
 export const menuItemStyles = {

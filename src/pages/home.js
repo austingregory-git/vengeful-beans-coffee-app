@@ -23,7 +23,7 @@ const getDescriptionFromName = (menuItemName, menuItemType) => {
 const Home = () => {
     return (
         <div style={styles.backgroundStyles}>
-            <div className='banner'>
+            <div>
                 <img style={styles.imageStyle} src={VengefulBeansPixelArt}></img>
             </div>
             <div style={styles.scheduleStyles}>
