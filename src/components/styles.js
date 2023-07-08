@@ -136,6 +136,22 @@ export const featuredItemsStyles = {
     whiteSpace: "pre-line",
 };
 
+export const merchItemsStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    border: "1px solid black",
+    background: "#ffaec8",
+    color: "#000000",
+    fontSize: "1.5em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+};
+
 export const menuStyles = {
     display: "block",
     marginLeft: "auto",
@@ -194,6 +210,15 @@ export const bottomBarStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+};
+
+export const merchItemsGridStyles = {
+    maxHeight: 328,
+    '&:hover': {
+        '& .image-overlay': {
+            display: 'block',
+        },
+    },
 };
 
 export const featuredItemsGridStyles = {
