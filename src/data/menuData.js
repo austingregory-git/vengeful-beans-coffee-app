@@ -72,7 +72,7 @@ export const menuData = {
         displayName: "Tea/Non Coffee Drinks",
         items: [
         {
-            name: "Earl Grey Sweatshirt",
+            name: "Earl 'Grey' Sweatshirt",
             description: "The description doesn't fit if not a synonym of menace",
             price: 4
         },

@@ -14,7 +14,6 @@ import { OurStoryText } from "../components/styles.js";
  
 const getDescriptionFromName = (merchItemName) => {
     const {merch} = merchData;
-    console.log(merch)
     const item = merch.find((item) => item.id === merchItemName);
     const itemString = item.description + "\n\n" + item.price
     return item ? itemString : null;

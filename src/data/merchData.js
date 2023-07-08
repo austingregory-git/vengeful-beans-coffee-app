@@ -23,7 +23,7 @@ export const merchData = {
         {
             id: "Hat",
             description: "Freya Hat",
-            price: "$25"
+            price: "$15"
         },
         {
             id: "Mug",

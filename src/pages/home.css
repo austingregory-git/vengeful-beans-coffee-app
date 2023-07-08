@@ -32,17 +32,6 @@
 	}
 }
 
-.schedule {
-    width: "100vw";
-    height: "100vh";
-    background-color: #8C705F;
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
 .image {
   display: block;
   width: 100%;
