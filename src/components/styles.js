@@ -1,10 +1,23 @@
 import styled from "styled-components";
 
 export const backgroundStyles = {
+    position: "fixed",
+    top:"calc(10vh + 164px)",
+    left:0,
     width: "100%",
     height: "100%",
     background: '#b8f5fa',
+    zIndex: -2,
 };
+
+export const particlesStyles = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -1,
+}
 
 export const imageStyle = {
     display: "block",

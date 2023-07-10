@@ -8,6 +8,7 @@ import {menuData} from "../data/menuData.js"
 import * as styles from '../components/styles.js'
 import { renderMenu } from "../components/renderMenu";
 import { renderBottomBar } from "../components/renderBottomBar";
+import Rain from "../components/renderRain.js"
 
 const schedule = "Schedule:\n\nMonday - Friday: 6am - 6pm\nSaturday - Sunday: 6am - 8pm\n\n";
 const location = "Location:\n\n722 Paramore St.";
@@ -23,6 +24,7 @@ const getDescriptionFromName = (menuItemName, menuItemType) => {
 const Home = () => {
     return (
         <div style={styles.backgroundStyles}>
+            <Rain />
             <div>
                 <img style={styles.imageStyle} src={VengefulBeansPixelArt}></img>
             </div>
