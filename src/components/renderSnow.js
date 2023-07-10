@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import * as styles from "./styles.js";
 
 
-export default function Rain() {
+export default function Snow() {
 const particlesInit = async (main) => {
     console.log(main);
     await loadFull(main);
@@ -21,51 +21,26 @@ const particlesInit = async (main) => {
             loaded={particlesLoaded}
             options={{
             fpsLimit: 120,
-            interactivity: {
-                events: {
-                onClick: {
-                    enable: true,
-                    mode: "push"
-                },
-                onHover: {
-                    enable: true,
-                    mode: "repulse"
-                },
-                resize: true
-                },
-                modes: {
-                push: {
-                    quantity: 4
-                },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4
-                }
-                }
-            },
             particles: {
                 color: {
-                value: "#ffffff"
+                    value: "#ffffff"
                 },
                 links: {
-                color: "#ffffff",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1
+                    color: "#ffffff",
+                    distance: 150,
+                    enable: false,
+                    opacity: 0.5,
+                    width: 1
                 },
                 collisions: {
-                enable: true
+                    enable: true
                 },
                 move: {
-                direction: "none",
-                enable: true,
-                outModes: {
-                    default: "bounce"
-                },
-                random: false,
-                speed: 1,
-                straight: false
+                    direction: "bottom",
+                    enable: true,
+                    random: false,
+                    speed: 1,
+                    straight: false
                 },
                 number: {
                 density: {
@@ -81,7 +56,7 @@ const particlesInit = async (main) => {
                 type: "circle"
                 },
                 size: {
-                value: { min: 1, max: 5 }
+                value: { min: 2, max: 8 }
                 }
             },
             detectRetina: true

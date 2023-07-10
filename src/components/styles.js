@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const backgroundStyles = {
-    position: "fixed",
-    top:"calc(10vh + 164px)",
+    position: "relative",
+    top:"calc(10vh+164px)",
     left:0,
     width: "100%",
     height: "100%",
+    backgroundSize: "cover",
     background: '#b8f5fa',
-    zIndex: -2,
+    zIndex: -3,
 };
 
 export const particlesStyles = {
@@ -16,6 +17,16 @@ export const particlesStyles = {
     left: 0,
     width: "100%",
     height: "100%",
+    zIndex: -2,
+}
+
+export const cloudsStyles = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    maxHeight: 164,
     zIndex: -1,
 }
 
