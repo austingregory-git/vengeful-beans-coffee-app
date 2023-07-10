@@ -10,8 +10,8 @@ import { renderMenu } from "../components/renderMenu";
 import { renderBottomBar } from "../components/renderBottomBar";
 import Snow from "../components/renderSnow.js"
 import Rain from "../components/renderRain.js"
-import Clouds from "../assets/Clouds.png"
-import DarkClouds from "../assets/DarkClouds.png"
+import Clouds from "../assets/LongerClouds.png"
+import DarkClouds from "../assets/LongerDarkClouds.png"
 
 const schedule = "Schedule:\n\nMonday - Friday: 6am - 6pm\nSaturday - Sunday: 6am - 8pm\n\n";
 const location = "Location:\n\n722 Paramore St.";
@@ -26,11 +26,11 @@ const getDescriptionFromName = (menuItemName, menuItemType) => {
 
 const Home = () => {
     return (
-        <div style={styles.darkBackgroundStyles}>
+        <div style={styles.backgroundStyles}>
             <div>
-                <img style={styles.cloudsStyles} src={DarkClouds}></img>
+                <img style={styles.cloudsStyles} src={Clouds}></img>
             </div>
-            <Rain />
+            <Snow />
             <div>
                 <img style={styles.imageStyle} src={VengefulBeansPixelArt}></img>
             </div>
