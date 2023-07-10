@@ -7,8 +7,8 @@ background: #ffffff;
 height: 10vh;
 width: 100%;
 display: flex;
-justify-content: center;
-z-index: 12;
+position: relative;
+z-index: 4;
 `;
 
 export const NavLink = styled(Link)`
@@ -29,15 +29,11 @@ cursor: pointer;
     filter: brightness(0.85);
 }
 
-// &.active {
-// 	color: #ffaec8;
-// }
-
 @media screen and (max-width: 768px) {
 	display: flex;
 	margin: 0.2rem 0;
 	padding: 0 1rem;
-	font-size: 1.25em;
+	font-size: 1.15em;
 	cursor: pointer;
 }
 `;

@@ -21,6 +21,8 @@ const imageStyle = {
   height: "100%",
   maxWidth: 788,
   maxHeight: 328,
+  position: "relative",
+  zIndex: 4,
 };
 
 const menuBreakStyle = {

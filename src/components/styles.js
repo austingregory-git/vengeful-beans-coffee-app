@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const bannerStyles = {
-    background: '#ffffff'
+    background: '#ffffff',
+    position: "relative",
+    zIndex: 4,
 }
 
 export const backgroundStyles = {
     position: "relative",
-    top:"calc(10vh+164px)",
+    top:0,
     left:0,
     width: "100%",
     height: "100%",
-    backgroundSize: "cover",
     background: '#b8f5fa',
-    zIndex: -3,
+    zIndex: 1
 };
 
 export const darkBackgroundStyles = {
@@ -21,8 +22,18 @@ export const darkBackgroundStyles = {
     left:0,
     width: "100%",
     height: "100%",
-    backgroundSize: "cover",
     background: '#acacac',
+    zIndex: -3,
+};
+
+export const particleBackgroundStyles = {
+    position: "relative",
+    top:0,
+    left:0,
+    width: "100%",
+    height: "100%",
+    backgroundSize: "cover",
+    background: '#b8f5fa',
     zIndex: -3,
 };
 
@@ -32,7 +43,7 @@ export const particlesStyles = {
     left: 0,
     width: "100%",
     height: "100%",
-    zIndex: -2,
+    zIndex: 2,
 }
 
 export const cloudsStyles = {
@@ -42,7 +53,7 @@ export const cloudsStyles = {
     width: "100%",
     height: "100%",
     maxHeight: 164,
-    zIndex: -1,
+    zIndex: 3,
 }
 
 export const imageStyle = {
@@ -53,7 +64,9 @@ export const imageStyle = {
     height: "100%",
     maxWidth: 788,
     maxHeight: 328,
-    border: "1px solid black"
+    border: "1px solid black",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const ourStoryBrownContainerStyles = {
@@ -137,6 +150,8 @@ export const scheduleStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const darkScheduleStyles = {
@@ -173,6 +188,8 @@ export const featuredItemsStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const merchItemsStyles = {
@@ -189,6 +206,8 @@ export const merchItemsStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const menuStyles = {
@@ -207,6 +226,8 @@ export const menuStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const menuCategoryStyles = {
@@ -249,6 +270,8 @@ export const bottomBarStyles = {
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const merchItemsGridStyles = {
