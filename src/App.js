@@ -8,6 +8,7 @@ import Menu from './pages/menu';
 import OurStory from './pages/ourstory';
 import Merch from './pages/merch';
 import VengefulBeansLogo from "./VengefulBeansBanner.png"
+import * as styles from "./components/styles.js"
 //.75 width 222
 //.75 height 246
 
@@ -29,7 +30,7 @@ const menuBreakStyle = {
 function App() {
     return (
         <Router>
-            <div className='banner'>
+            <div style={styles.bannerStyles}>
               <img style={imageStyle} src={VengefulBeansLogo}></img>
             </div>
             <div style={menuBreakStyle}></div>

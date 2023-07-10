@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import * as styles from "./styles.js";
 
 
-export default function Snow() {
+export default function Rain() {
 const particlesInit = async (main) => {
     console.log(main);
     await loadFull(main);
@@ -32,6 +32,16 @@ const particlesInit = async (main) => {
                     opacity: 0.5,
                     width: 1
                 },
+                rotate: {
+                    value: 60,
+                    random: false,
+                    direction: "clockwise",
+                    animation: {
+                      enable: false,
+                      speed: 5,
+                      sync: false
+                    }
+                },
                 collisions: {
                     enable: false
                 },
@@ -39,24 +49,28 @@ const particlesInit = async (main) => {
                     direction: "bottom-right",
                     enable: true,
                     random: false,
-                    speed: {min: 0.8, max: 1.2},
-                    straight: false
+                    speed: { min: 8, max: 12},
+                    straight: true
                 },
                 number: {
-                    density: {
-                        enable: true,
-                        area: 800
-                    },
-                    value: 80
+                density: {
+                    enable: true,
+                    area: 800
+                },
+                value: 120
                 },
                 opacity: {
-                    value: 0.5
+                value: 0.5
                 },
                 shape: {
-                    type: "circle"
-                },
+                    stroke: {
+                      color: "#b8f5fa",
+                      width: 2
+                    },
+                    type: "line"
+                  },
                 size: {
-                    value: { min: 2, max: 8 }
+                value: { min: 10, max: 14 }
                 }
             },
             detectRetina: true

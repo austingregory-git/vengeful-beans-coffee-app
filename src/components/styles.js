@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const bannerStyles = {
+    background: '#ffffff'
+}
+
 export const backgroundStyles = {
     position: "relative",
     top:"calc(10vh+164px)",
@@ -8,6 +12,17 @@ export const backgroundStyles = {
     height: "100%",
     backgroundSize: "cover",
     background: '#b8f5fa',
+    zIndex: -3,
+};
+
+export const darkBackgroundStyles = {
+    position: "relative",
+    top:"calc(10vh+164px)",
+    left:0,
+    width: "100%",
+    height: "100%",
+    backgroundSize: "cover",
+    background: '#acacac',
     zIndex: -3,
 };
 
