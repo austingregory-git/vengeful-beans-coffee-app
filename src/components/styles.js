@@ -1,10 +1,34 @@
 import styled from "styled-components";
 
+export const themeToggleButton = {
+    position: "relative",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    zIndex: 4,
+}
+
 export const bannerStyles = {
     background: '#ffffff',
     position: "relative",
     zIndex: 4,
-}
+};
+
+export const bannerImageStyle = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    position: "relative",
+    zIndex: 4,
+};
+
+export const menuBreakStyle = {
+    border: "1px solid black"
+};
 
 export const backgroundStyles = {
     position: "relative",
