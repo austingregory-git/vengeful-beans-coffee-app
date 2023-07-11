@@ -99,7 +99,7 @@ const renderMerch = (darkMode) => {
                         </Grid>
                     </Grid>
                 </div>
-                {renderBottomBar()}
+                {renderBottomBar(darkMode)}
             </div>
         );
     }
@@ -177,7 +177,7 @@ const renderMerch = (darkMode) => {
                         </Grid>
                     </Grid>
                 </div>
-                {renderBottomBar()}
+                {renderBottomBar(darkMode)}
             </div>
     
         );
