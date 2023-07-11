@@ -19,7 +19,7 @@ const aboutVengefulBeansCoffee = "At Vengeful Beans Coffee, we pride ourselves o
 const aboutFreya = "Freya is the guardian of Vengeful Beans Coffee. She is suspected to be omnipotent."
 const aboutUdon1 = "Udon is just happy to be involved."
 const aboutUdon2 = "He is a certified noodle :)"
-const aboutVengefulBeansLore = "Years ago, the homeland of our coffee beans were invaded by corporate coffee shops, stealing their friends and family, and roasting them into bland drinks. The survivors banded together to rebel against the evil empire and chose Abigail as their leader. Their mission is simple: vengeance."
+const aboutVengefulBeansLore = "Years ago, the homeland of our coffee beans was invaded by corporate coffee shops, stealing their friends and family, and roasting them into bland drinks. The survivors banded together to rebel against the evil empire and chose Abigail as their leader. Their mission is simple: vengeance."
  
 const renderOurStory= (darkMode) => {
     if(darkMode) {
