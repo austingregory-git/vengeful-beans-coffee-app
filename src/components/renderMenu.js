@@ -31,31 +31,51 @@ const renderMenuItem = (menuItemName, menuItemDescription, menuItemPrice) => {
     )
 }
 
-const renderMenuCategory = (menuCategoryName) => {
+const renderMenuCategory = (menuCategoryName, darkMode) => {
     const {displayName} = menuData[menuCategoryName];
-    return (
-        <div style={styles.menuCategoryStyles}>{displayName}</div>
-    )
+    if(!darkMode) {
+        return (
+            <div style={styles.darkMenuCategoryStyles}>{displayName}</div>
+        )
+    }
+    else if(darkMode) {
+        return (
+            <div style={styles.menuCategoryStyles}>{displayName}</div>
+        )
+    }
 }
 
-export const renderMenuItems = () => {
+export const renderMenuItems = (darkMode) => {
     return Object.entries(menuData).map(([categoryName, categoryData]) => (
         <React.Fragment key={categoryName}>
             <div style={{ border: "1px solid black" }}></div>
-            {renderMenuCategory(categoryName)}
+            {renderMenuCategory(categoryName, darkMode)}
             <Grid style={styles.menuGridStyles} container spacing={4}>
-                {fillMenuItems(categoryName)}
+                {fillMenuItems(categoryName, darkMode)}
             </Grid>
         </React.Fragment>
     ));}
 
-export const renderMenu = () => {
-    return (
-        <div style={styles.menuStyles}>
-            {menu}
-            <div>
-               {renderMenuItems()}
+export const renderMenu = (darkMode) => {
+    if(!darkMode) {
+        return (
+            <div style={styles.darkMenuStyles}>
+                {menu}
+                <div>
+                   {renderMenuItems(darkMode)}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+    else if(darkMode) {
+        return (
+            <div style={styles.menuStyles}>
+                {menu}
+                <div>
+                   {renderMenuItems(darkMode)}
+                </div>
+            </div>
+        )
+    }
+
 }

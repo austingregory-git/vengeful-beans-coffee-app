@@ -28,7 +28,6 @@ const getDescriptionFromName = (menuItemName, menuItemType) => {
 }
 
 const renderHome = (darkMode) => {
-    console.log(darkMode)
     if(darkMode) {
         return (
             <div style={styles.backgroundStyles}>
@@ -63,8 +62,8 @@ const renderHome = (darkMode) => {
                         </Grid>
                     </Grid>
                 </div>
-                {renderMenu()}
-                {renderBottomBar()}
+                {renderMenu(darkMode)}
+                {renderBottomBar(darkMode)}
             </div>
     
         );
@@ -79,32 +78,32 @@ const renderHome = (darkMode) => {
                 <div>
                     <img style={styles.imageStyle} src={VengefulBeansPixelArt}></img>
                 </div>
-                <div style={styles.scheduleStyles}>
+                <div style={styles.darkScheduleStyles}>
                     {schedule+location}
                 </div>
-                <div style={styles.featuredItemsStyles}>
+                <div style={styles.darkFeaturedItemsStyles}>
                     {featuredItems}
                     <Grid container spacing={4}>
                         <Grid xs={6}>
-                            <div className="image-container" style={styles.featuredItemsGridStyles}>
+                            <div className="dark-image-container" style={styles.darkFeaturedItemsGridStyles}>
                                 <img className="image" src={SnowInMay}></img>
-                                <div className="image-overlay">
+                                <div className="dark-image-overlay">
                                     {getDescriptionFromName("Snow in May", "specialty_drinks")}
                                 </div>
                             </div>
                         </Grid>
                         <Grid xs={6}>
-                            <div className="image-container" style={styles.featuredItemsGridStyles}>
+                            <div className="dark-image-container" style={styles.darkFeaturedItemsGridStyles}>
                                 <img className="image" src={TheSpiderQueen}></img>
-                                <div className="image-overlay">
+                                <div className="dark-image-overlay">
                                     {getDescriptionFromName("The Spider Queen", "specialty_drinks")}
                                 </div>
                             </div>
                         </Grid>
                     </Grid>
                 </div>
-                {renderMenu()}
-                {renderBottomBar()}
+                {renderMenu(darkMode)}
+                {renderBottomBar(darkMode)}
             </div>
         )
     }

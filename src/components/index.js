@@ -1,7 +1,7 @@
 import React from "react";
-import { Bars, Nav, NavLink, NavMenu } from "./NavbarElements";
+import { Nav, NavLink, DarkNav, DarkNavLink, NavMenu } from "./NavbarElements";
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <>
             <Nav>
@@ -23,5 +23,28 @@ const Navbar = () => {
         </>
     );
 };
- 
-export default Navbar;
+
+export const DarkNavbar = () => {
+    return (
+        <>
+            <DarkNav>
+                <NavMenu>
+                    <DarkNavLink to="/home">
+                        Home
+                    </DarkNavLink>
+                    <DarkNavLink to="/menu">
+                        Menu
+                    </DarkNavLink>
+                    <DarkNavLink to="/ourstory">
+                        Our Story
+                    </DarkNavLink>
+                    <DarkNavLink to="/merch">
+                        Merch
+                    </DarkNavLink>
+                </NavMenu>
+            </DarkNav>
+        </>
+    );
+};
+
+

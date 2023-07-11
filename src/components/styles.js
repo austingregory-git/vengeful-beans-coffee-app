@@ -14,6 +14,12 @@ export const bannerStyles = {
     zIndex: 4,
 };
 
+export const darkBannerStyles = {
+    background: '#15171e',
+    position: "relative",
+    zIndex: 4,
+};
+
 export const bannerImageStyle = {
     display: "block",
     marginLeft: "auto",
@@ -28,6 +34,10 @@ export const bannerImageStyle = {
 
 export const menuBreakStyle = {
     border: "1px solid black"
+};
+
+export const darkMenuBreakStyle = {
+    border: "1px solid white"
 };
 
 export const backgroundStyles = {
@@ -47,7 +57,7 @@ export const darkBackgroundStyles = {
     width: "100%",
     height: "100%",
     background: '#acacac',
-    zIndex: -3,
+    zIndex: 1,
 };
 
 export const particleBackgroundStyles = {
@@ -102,7 +112,24 @@ export const ourStoryBrownContainerStyles = {
     maxWidth: 788,
     maxHeight: 328,
     border: "1px solid black",
-    background: "#f3bc9c"
+    background: "#f3bc9c",
+    position: "relative",
+    zIndex: 4,
+    
+};
+
+export const ourStoryGrayContainerStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    border: "1px solid black",
+    background: "#15171e",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const ourStoryPinkContainerStyles = {
@@ -114,7 +141,23 @@ export const ourStoryPinkContainerStyles = {
     maxWidth: 788,
     maxHeight: 328,
     border: "1px solid black",
-    background: "#ffaec8"
+    background: "#ffaec8",
+    position: "relative",
+    zIndex: 4,
+};
+
+export const ourStoryPurpleContainerStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 328,
+    border: "1px solid black",
+    background: "#b64fc8",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const OurStoryText = styled.div`
@@ -135,6 +178,38 @@ max-height: 328;
 
 export const OurStoryLore = styled.div`
 color: #000000;
+font-size: 1.25em;
+font-family: 'Bradley Hand',cursive;
+text-align: center;
+white-space: pre-line;
+padding: 10px;
+max-height: 328;
+@media screen and (max-width: 668px) {
+    font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+    font-size: 0.75em;
+}
+`;
+
+export const DarkOurStoryText = styled.div`
+color: #ffffff;
+font-size: 1.5em;
+font-family: 'Bradley Hand',cursive;
+text-align: center;
+white-space: pre-line;
+padding: 10px;
+max-height: 328;
+@media screen and (max-width: 668px) {
+    font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+    font-size: 0.75em;
+}
+`;
+
+export const DarkOurStoryLore = styled.div`
+color: #ffffff;
 font-size: 1.25em;
 font-family: 'Bradley Hand',cursive;
 text-align: center;
@@ -188,12 +263,14 @@ export const darkScheduleStyles = {
     maxWidth: 788,
     maxHeight: 328,
     border: "1px solid black",
-    background: "#0c4363",
-    color: "#000000",
+    background: "#15171e",
+    color: "#ffffff",
     fontSize: "1.5em",
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const featuredItemsStyles = {
@@ -216,6 +293,26 @@ export const featuredItemsStyles = {
     zIndex: 4,
 };
 
+export const darkFeaturedItemsStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "20px 0",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 424,
+    border: "1px solid black",
+    background: "#b64fc8",
+    color: "#ffffff",
+    fontSize: "1.5em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
+};
+
 export const merchItemsStyles = {
     display: "block",
     marginLeft: "auto",
@@ -226,6 +323,24 @@ export const merchItemsStyles = {
     border: "1px solid black",
     background: "#ffaec8",
     color: "#000000",
+    fontSize: "1.5em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
+};
+
+export const darkMerchItemsStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    border: "1px solid black",
+    background: "#b64fc8",
+    color: "#ffffff",
     fontSize: "1.5em",
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
@@ -254,14 +369,42 @@ export const menuStyles = {
     zIndex: 4,
 };
 
+export const darkMenuStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "20px 0",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: "100%",
+    border: "1px solid black",
+    background: "#15171e",
+    color: "#ffffff",
+    fontSize: "1.5em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
+};
+
 export const menuCategoryStyles = {
     padding: "10px 0",
     fontSize: "1em",
     fontFamily: "Bradley Hand,cursive",
     textAlign: "center",
     whiteSpace: "pre-line",
-    //background: "#ffaec8",
     background: "#f3bc9c",
+};
+
+export const darkMenuCategoryStyles = {
+    padding: "10px 0",
+    fontSize: "1em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+    background: "#15171e",
 };
 
 export const menuItemStyles = {
@@ -298,6 +441,26 @@ export const bottomBarStyles = {
     zIndex: 4,
 };
 
+export const darkBottomBarStyles = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "5px 0",
+    width: "100%",
+    height: "100%",
+    maxWidth: 788,
+    maxHeight: 128,
+    border: "1px solid black",
+    background: "#b64fc8",
+    color: "#ffffff",
+    fontSize: "0.75em",
+    fontFamily: "Bradley Hand,cursive",
+    textAlign: "center",
+    whiteSpace: "pre-line",
+    position: "relative",
+    zIndex: 4,
+};
+
 export const merchItemsGridStyles = {
     maxHeight: 328,
     '&:hover': {
@@ -310,6 +473,15 @@ export const merchItemsGridStyles = {
 export const featuredItemsGridStyles = {
     '&:hover': {
         '& .image-overlay': {
+            display: 'block',
+        },
+    },
+};
+
+
+export const darkFeaturedItemsGridStyles = {
+    '&:hover': {
+        '& .dark-image-overlay': {
             display: 'block',
         },
     },
