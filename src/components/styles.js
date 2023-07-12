@@ -33,11 +33,15 @@ export const bannerImageStyle = {
 };
 
 export const menuBreakStyle = {
-    border: "1px solid black"
+    border: "1px solid black",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const darkMenuBreakStyle = {
-    border: "1px solid white"
+    border: "1px solid white",
+    position: "relative",
+    zIndex: 4,
 };
 
 export const backgroundStyles = {
@@ -58,17 +62,6 @@ export const darkBackgroundStyles = {
     height: "100%",
     background: '#acacac',
     zIndex: 1,
-};
-
-export const particleBackgroundStyles = {
-    position: "relative",
-    top:0,
-    left:0,
-    width: "100%",
-    height: "100%",
-    backgroundSize: "cover",
-    background: '#b8f5fa',
-    zIndex: -3,
 };
 
 export const particlesStyles = {
