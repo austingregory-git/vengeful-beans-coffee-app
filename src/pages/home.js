@@ -13,12 +13,8 @@ import Snow from "../components/renderSnow.js"
 import Rain from "../components/renderRain.js"
 import Clouds from "../assets/LongerClouds.png"
 import DarkClouds from "../assets/LongerDarkClouds.png"
-import { ThemeContext, themes } from '../context/themeContext.js';
-
-
-const schedule = "Schedule:\n\nMonday - Friday: 6am - 6pm\nSaturday - Sunday: 6am - 8pm\n\n";
-const location = "Location:\n\n722 Paramore St.";
-const featuredItems = "Featured Items\n\n";
+import { ThemeContext } from '../context/themeContext.js';
+import {schedule, location, featuredItems} from "../data/homeData.js"
 
 const getDescriptionFromName = (menuItemName, menuItemType) => {
     const { items } = menuData[menuItemType]
@@ -27,6 +23,7 @@ const getDescriptionFromName = (menuItemName, menuItemType) => {
     return item ? itemString : null;
 }
 
+//if we want to clean this up, we can use conditional styling and create functions to use Snow or Rain based on current theme instead of doing these two blocks of mostly the same code -- also true for the other pages. 
 const renderHome = (darkMode) => {
     if(darkMode) {
         return (

@@ -7,19 +7,13 @@ import FreyaPlaying from "../assets/FreyaPlaying.jpg";
 import FreyaWorking from "../assets/FreyaWorking.jpg";
 import UdonSleeping from "../assets/UdonSleeping.jpg";
 import VengefulBeansCoffeeShopLogo from "../assets/VengefulBeansCoffeeShopLogo2.png"
+import { aboutVengefulBeansOwner, aboutVengefulBeansCoffee, aboutFreya, aboutUdon1, aboutUdon2, aboutVengefulBeansLore } from "../data/ourStoryData.js";
 import Grid from '@mui/material/Unstable_Grid2'
 import Snow from "../components/renderSnow.js"
 import Rain from "../components/renderRain.js"
 import Clouds from "../assets/LongerClouds.png"
 import DarkClouds from "../assets/LongerDarkClouds.png"
-import { ThemeContext, themes } from '../context/themeContext.js';
-
-const aboutVengefulBeansOwner = "Vengeful Beans Coffee is owned and operated by our fearless leader, Abigail. She has been honing her potion-making craft for years, resulting in a perfect blend of aesthetics and delicious taste."
-const aboutVengefulBeansCoffee = "At Vengeful Beans Coffee, we pride ourselves on our dedication to the art of alchemy. Experimentation and curiosity has led us to discover concoctions for any mood. Whether you need to be energized, relaxed, or hyped up—we have a delicious drink for you!"
-const aboutFreya = "Freya is the guardian of Vengeful Beans Coffee. She is suspected to be omnipotent."
-const aboutUdon1 = "Udon is just happy to be involved."
-const aboutUdon2 = "He is a certified noodle :)"
-const aboutVengefulBeansLore = "Years ago, the homeland of our coffee beans was invaded by corporate coffee shops, stealing their friends and family, and roasting them into bland drinks. The survivors banded together to rebel against the evil empire and chose Abigail as their leader. Their mission is simple: vengeance."
+import { ThemeContext } from '../context/themeContext.js';
  
 const renderOurStory= (darkMode) => {
     if(darkMode) {
